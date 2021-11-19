@@ -1,0 +1,8 @@
+{
+  "port": 9100,
+  "max_per_page": 25,
+  "services": {
+    "marsh": "postgresql://postgres:postgres@host.docker.internal:5432/erc20",
+    "zeroswap": "postgresql://postgres:postgres@host.docker.internal:5432/zeroswap"
+  }
+}

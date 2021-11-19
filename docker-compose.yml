@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  graphql:
+    container_name: postgraphile-multiserver
+    build: .
+    restart: always
+    networks:
+      - dev
+    ports:
+      - "9100:9100"
+
+networks:
+  dev:
+    external: true
