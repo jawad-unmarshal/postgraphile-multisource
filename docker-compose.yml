@@ -9,6 +9,8 @@ services:
       - dev
     ports:
       - "9100:9100"
+    volumes:
+      - ./volume/config:/src/config
 
 networks:
   dev:

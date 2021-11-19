@@ -1,5 +1,5 @@
 const {makeWrapResolversPlugin} = require("postgraphile");
-const config = require('../config/config.json');
+const config = require('../volume/config/config.json');
 
 const pageLimit = config.max_per_page
 

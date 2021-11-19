@@ -3,7 +3,7 @@ const PaginationFilterPlugin = require("./plugins/PaginationFilter");
 const ConnectionFilterPlugin = require("postgraphile-plugin-connection-filter");
 const MutationBlockerPlugin = require("./plugins/MutationBlocker")
 const {postgraphile} = require("postgraphile");
-const config = require('./config/config.json');
+const config = require('./volume/config/config.json');
 
 const app = express();
 
