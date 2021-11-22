@@ -4,7 +4,6 @@
   "dependencies": {
     "express": "^4.17.1",
     "postgraphile": "^4.12.5",
-    "postgraphile-plugin-connection-filter": "^2.2.2",
-    "postgraphql": "^3.5.6"
+    "postgraphile-plugin-connection-filter": "^2.2.2"
   }
 }
