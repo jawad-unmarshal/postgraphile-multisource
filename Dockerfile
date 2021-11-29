@@ -2,6 +2,7 @@ FROM node:alpine
 
 WORKDIR /src
 COPY . ./
+RUN npm install -g nodemon
 RUN npm install
 
-ENTRYPOINT ["node", "App.js"]
+ENTRYPOINT ["nodemon", "App.js"]

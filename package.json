@@ -2,7 +2,9 @@
   "name": "postgraphile-multiserver",
   "version": "1.0.0",
   "dependencies": {
+    "chokidar": "^3.5.2",
     "express": "^4.17.1",
+    "nodemon": "^2.0.15",
     "postgraphile": "^4.12.5",
     "postgraphile-plugin-connection-filter": "^2.2.2"
   }
