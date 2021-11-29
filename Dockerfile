@@ -5,4 +5,4 @@ COPY . ./
 RUN npm install -g nodemon
 RUN npm install
 
-ENTRYPOINT ["nodemon", "App.js"]
+ENTRYPOINT ["nodemon","--watch","./config/config.json", "App.js"]
