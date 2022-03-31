@@ -2,7 +2,7 @@
   "port": 9100,
   "max_per_page": 25,
   "services": {
-    "cont_indexer_db": "postgresql://postgres:postgres@host.docker.internal/contract_indexer_docker_db",
-    "custom_indexer": "postgresql://postgres:postgres@host.docker.internal/custom_indexer_test"
+    "cont_indexer_db": "postgresql://jawad-unmarshal:@host.docker.internal/contract_indexer_docker_db",
+    "custom_indexer": "postgresql://jawad-unmarshal:@host.docker.internal/custom_indexer_test"
   }
 }

@@ -7,7 +7,6 @@ const config = require("./config/config.json");
 const app = express();
 
 const services = config.services;
-//test change,
 for (const [service, connectionString] of Object.entries(services)) {
     console.log(service, connectionString)
     app.use(
