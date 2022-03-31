@@ -6,11 +6,13 @@ const config = require("./config/config.json");
 
 const app = express();
 
-const services = config.services;
-for (const [service, connectionString] of Object.entries(services)) {
-    console.log(service, connectionString)
+const schemaList = config.schema_list;
+for (let index in schemaList) {
+    const service = schemaList[index]
+    console.log(service)
     app.use(
-        postgraphile(connectionString, "public", {
+        postgraphile(config.connection_string, service, {
+            ownerConnectionString: config.owner_connection_string,
             disableDefaultMutations: true,
             watchPg: true,
             graphiql: true,

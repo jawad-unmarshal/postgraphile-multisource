@@ -1,8 +1,10 @@
 {
   "port": 9100,
   "max_per_page": 25,
-  "services": {
-    "cont_indexer_db": "postgresql://jawad-unmarshal:@host.docker.internal/contract_indexer_docker_db",
-    "custom_indexer": "postgresql://jawad-unmarshal:@host.docker.internal/custom_indexer_test"
-  }
+  "owner_connection_string":"postgresql://jawad-unmarshal:@host.docker.internal:5432/multi_schema_db",
+  "connection_string":"postgresql://jawad-unmarshal:@host.docker.internal:5432/multi_schema_db",
+  "schema_list": [
+    "test_b",
+    "test_b"
+  ]
 }
