@@ -2,7 +2,7 @@
   "port": 9100,
   "max_per_page": 25,
   "services": {
-    "marsh": "postgresql://postgres:postgres@127.0.0.1:5432/erc20",
-    "zeroswap": "postgresql://postgres:postgres@127.0.0.1:5432/zeroswap"
+    "cont_indexer_db": "postgresql://postgres:postgres@127.0.0.1:5432/contract_indexer_docker_db",
+    "custom_indexer": "postgresql://postgres:postgres@127.0.0.1:5432/custom_indexer_test"
   }
 }
